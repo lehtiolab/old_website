@@ -10,7 +10,7 @@ layout: default
 						<div class="box">
 							<div class="columns">
 								<div class="column is-one-fifth">
-									<img src="{{ pub.image }}">
+									<img src="{{ pub.image }}" width="90">
 								</div>
 								<div class="column">
 									<h4 class="title is-4"><a href="{{ pub.doi }}">{{ pub.title }}</a></h4>
@@ -19,8 +19,8 @@ layout: default
 									</h5>
 									{{ pub.authors }}
 								</div>
-								{{ pub.content }}
 							</div>
+							{{ pub.content }}
 						</div>
 						{% endfor %}
 					</div>
