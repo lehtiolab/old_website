@@ -30,7 +30,7 @@ layout: default
 						{% assign alumni = site.members| where: 'alumn', true| reverse %}
 						<ul  class="is-size-5">
 							{% for member in alumni %}
-							<li>{{ member.name }} - {{ member.content }}</li>
+							<li>{{ member.name }} - {{ member.content | remove: '<p>' | remove: '</p>'}}</li>
 							{% endfor %}
 						</ul>
 					</div>

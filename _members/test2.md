@@ -1,7 +1,7 @@
 ---
 alumn: true
 date: 2017-12-01
-name: Proteinaceous P
+name: Speccy Spexx
 image: img/massface.png
 title: Distinguished professor and nice colleague
 
