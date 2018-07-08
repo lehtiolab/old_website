@@ -8,9 +8,11 @@ layout: default
 					<div class="column is-two-thirds">
 						<h4 class="title is-4">Publications</h4>
 						<div class="box">
+							{% assign reversepubs = site.publications | reverse %}
 							<ul>
-							{% for pub in site.publications %}
-							<li>{{ pub.title }} - {{ pub.authors }}, <a href="https://dx.doi.org/{{ pub.doi }}">{{ pub.journal }}, {{ pub.month }} {{ pub.year }}</a></li>
+
+							{% for pub in reversepubs %}
+							<li>{{ pub.title }} - {{ pub.authors }}, <a href="https://dx.doi.org/{{ pub.doi }}">{{ pub.journal }}, {{ pub.date | date: "%b %Y" }}</a></li>
 							{% endfor %}
 							</ul>
 						</div>
