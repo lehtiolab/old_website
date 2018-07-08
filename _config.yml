@@ -6,4 +6,5 @@ defaults:
       layout: "default"
 collections:
 - publications
+- members
 
