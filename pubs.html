@@ -6,23 +6,14 @@ layout: default
 			<div class="container">
 				<div class="columns is-centered">
 					<div class="column is-two-thirds">
-						{% for pub in site.publications %}
+						<h4 class="title is-4">Publications</h4>
 						<div class="box">
-							<div class="columns">
-								<div class="column is-one-fifth">
-									<img src="{{ pub.image }}" width="90">
-								</div>
-								<div class="column">
-									<h4 class="title is-4"><a href="{{ pub.doi }}">{{ pub.title }}</a></h4>
-									<h5 class="subtitle is-5">
-										{{ pub.journal }}, {{ pub.month }} {{ pub.year }}
-									</h5>
-									{{ pub.authors }}
-								</div>
-							</div>
-							{{ pub.content }}
+							<ul>
+							{% for pub in site.publications %}
+							<li>{{ pub.title }} - {{ pub.authors }}, <a href="https://dx.doi.org/{{ pub.doi }}">{{ pub.journal }}, {{ pub.month }} {{ pub.year }}</a></li>
+							{% endfor %}
+							</ul>
 						</div>
-						{% endfor %}
 					</div>
 				</div>
 			</div>
