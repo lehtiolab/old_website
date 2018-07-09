@@ -26,7 +26,8 @@ selectedpubs:
 		<div class="columns is-centered">
 			<div class="column is-two-thirds">
 				{% for selpub in page.selectedpubs %}
-				{% assign pub = site.publications | where:"path", selpub | first %}
+				{{ selpub }}
+				{% assign pub = site.publications | where_exp:"item", "item.path contains selpub" | first %}
 				<div class="box">
 					<div class="columns">
 						<div class="column is-one-fifth">
