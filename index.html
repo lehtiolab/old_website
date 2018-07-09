@@ -25,8 +25,8 @@ selectedpubs:
 		<h4 class="title is-4 has-text-centered">Selected publications</h4>
 		<div class="columns is-centered">
 			<div class="column is-two-thirds">
-				{% assign selected = site.publications | where_exp:"item", "item.path in page.selectedpubs" %}
-				{% for pub in selected %}
+				{% for selpub in page.selectedpubs %}
+				{% assign pub = site.publications | where:"path", selpub | first %}
 				<div class="box">
 					<div class="columns">
 						<div class="column is-one-fifth">
