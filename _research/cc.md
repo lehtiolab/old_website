@@ -1,6 +1,7 @@
 ---
 boss: Rozbeh Jafari 
 title: Childhood cancer
+shortname: childcan
 ---
 Our overall aim in the Childhood Cancer team is to use mass spectrometry based proteomics to increase our biological understanding of Acute Lymphoblastic Leukemia (ALL) and Neuroblastoma, define clinical subtypes, evaluate drug interactions and identify biomarkers for targeted thereapies, improving personalized therapy.
 

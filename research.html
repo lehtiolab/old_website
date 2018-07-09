@@ -1,56 +1,71 @@
 ---
 layout: default
 ---
-		<div class="section">
-			<div class="container">
+<div class="section">
+	<div class="container">
 
-				<div class="tile is-ancestor">
-				<!-- here go the tiles -->
-					{% assign project = site.research | where: 'title', 'Bioinformatics'|first %}
-					<div class="tile is-4 is-parent">
-						<article class="tile notification is-child container">
-							{% include research.html %}
-						</article>
-					</div>
-				
-					{% assign project = site.research | where: 'title', 'Plasma proteomics'|first %}
-					<div class="tile is-4 is-parent">
-						<article class="tile notification is-info is-child container">
-							{% include research.html %}
-						</article>
-					</div>
-
-					{% assign project = site.research | where: 'title', 'Lung cancer'|first %}
-					<div class="tile is-4 is-parent">
-						<article class="tile notification is-primary is-child container">
-							{% include research.html %}
-						</article>
-					</div>
-				</div>
-
-				<div class="tile is-ancestor">
-
-					{% assign project = site.research | where: 'title', 'Breast cancer'|first %}
-					<div class="tile is-4 is-parent">
-						<article class="tile notification is-success is-child container">
-							{% include research.html %}
-						</article>
-					</div>
-
-					{% assign project = site.research | where: 'title', 'Proteomics methods' |first %}
-					<div class="tile is-4 is-parent">
-						<article class="tile notification is-child container">
-							{% include research.html %}
-						</article>
-					</div>
-				
-					{% assign project = site.research | where: 'title', 'Childhood cancer'|first %}
-					<div class="tile is-4 is-parent">
-						<article class="tile notification is-child is-warning container">
-							{% include research.html %}
-						</article>
-					</div>
-				</div>
+		<div class="tile is-ancestor">
+		<!-- here go the tiles -->
+			{% assign project = site.research | where: 'title', 'Bioinformatics'|first %}
+			{% include researchmodal.html %}
+			<div class="tile is-4 is-parent">
+				<article class="tile notification is-child container">
+					{% include research.html %}
+				</article>
+			</div>
+		
+			{% assign project = site.research | where: 'title', 'Plasma proteomics'|first %}
+			{% include researchmodal.html %}
+			<div class="tile is-4 is-parent">
+				<article class="tile notification is-info is-child container">
+					{% include research.html %}
+				</article>
 			</div>
 
+			{% assign project = site.research | where: 'title', 'Lung cancer'|first %}
+			{% include researchmodal.html %}
+			<div class="tile is-4 is-parent">
+				<article class="tile notification is-primary is-child container">
+					{% include research.html %}
+				</article>
+			</div>
 		</div>
+
+		<div class="tile is-ancestor">
+
+			{% assign project = site.research | where: 'title', 'Breast cancer'|first %}
+			{% include researchmodal.html %}
+			<div class="tile is-4 is-parent">
+				<article class="tile notification is-success is-child container">
+					{% include research.html %}
+				</article>
+			</div>
+
+			{% assign project = site.research | where: 'title', 'Proteomics methods' |first %}
+			{% include researchmodal.html %}
+			<div class="tile is-4 is-parent">
+				<article class="tile notification is-child container">
+					{% include research.html %}
+				</article>
+			</div>
+		
+			{% assign project = site.research | where: 'title', 'Childhood cancer'|first %}
+			{% include researchmodal.html %}
+			<div class="tile is-4 is-parent">
+				<article class="tile notification is-child is-warning container">
+					{% include research.html %}
+				</article>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+function showModal(name) {
+	console.log('show');
+	document.getElementById(name).classList.add('is-active');
+}
+function notShowModal(name) {
+	console.log('no show');
+	document.getElementById(name).classList.remove('is-active');
+}
+</script>

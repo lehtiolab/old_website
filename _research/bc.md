@@ -1,6 +1,7 @@
 ---
 boss: Henrik Johansson
 title: Breast cancer
+shortname: brca
 ---
 Our overall aim in the BC team is to use MS based proteomics tools to increase our biological understanding of breast cancer, define clinical subtypes, and identify biomarkers for personalized therapy.
 

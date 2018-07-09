@@ -1,5 +1,6 @@
 ---
 boss: Maria Pernemalm
 title: Plasma proteomics
+shortname: plasma
 ---
 Being able to monitor these biomarkers by a simple blood test is in many cases the ultimate goal. The overall aim for the plasma proteomics team is to develop an accurate and sensitive pipeline for mass spectrometry based analysis of the plasma proteome. Due to the skewed protein concentration distribution and high patient to patient variability it has proved to be extremely difficult to detect protein biomarkers in plasma and many methods that are suitable for cellular and tissue proteomics performs poorly in plasma. Currently we are developing HiRIEF based methodologies both for global proteome analysis and targeted MRM-analysis of the plasma proteome. We are also taking advantage of the advances within the proteogenomics field and incorporating data on single amino acid variants in our analyses. Many of our studies aim to discover diagnostic, prognostic and predictive biomarkers in plasma, but we also have experience in other applications such as analysing the protein corona of nanoparticles or quantifying proteins from immunocapture analysis as well as analysing other biological fluids such as pleural effusion, cystic fluid, and cerebrospinal fluid. 
