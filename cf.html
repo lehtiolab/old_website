@@ -1,5 +1,8 @@
 ---
 layout: default
+selectedpubs:
+  - Nordin_2015_Nanomedicine.md
+  - Kmiec_2013_Proc__Natl__Acad__Sci__U_S_A_.md
 ---
 		<div class="section">
 			<div class="container">
@@ -94,15 +97,11 @@ We will contact you within a few days.
 
 
 				<h4 class="title is-4">Recent projects</h4>
-				<!-- FIXME can we pull from collections? -->
 				<ul>
-					<li>    &bull; Ultrafiltration with size-exclusion liquid chromatography for high yield isolation of extracellular vesicles preserving intact biophysical and functional properties. Nordin JZ et al. Nanomedicine 2015</li>
-					<li>&bull;     Multi-omic data analysis and systems biology using Galaxy. Boekel J. et al. Nature Biotechnol. 2015</li>
-					<li>&bull;     SpliceVista, a tool for splice variant identification and visualization in shotgun proteomics data. Zhu Y., et al. Mol Cell. Proteomics. 2014</li>
-					<li>    &bull; Development and application of a novel method for unbiased genome wide proteogenomics and the identification of multiple novel protein-coding loci in human and in mouse. Branca RMM et al. Nature Methods. 2013</li>
-					<li>    &bull; Direct observation of structurally encoded metal discrimination and ether bond (tyrosine-valine crosslink) formation in a heterodinuclear metalloprotein. Griese JJ et al. PNAS 2013</li>
-					<li>    &bull; Identification of a novel Organellar Oligo Peptidase (OOP) that provides a complementary pathway for targeting peptide degradation in mitochondria and chloroplasts. Kmiec B et al. PNAS 2013</li>
-					<li>    &bull; Identification of retinoic acid receptor alpha as a novel predictive marker for tamoxifen treatment in breast cancer patients. Johansson HJ et al. Nature Commun. 2013</li>
+					{% for selpub in page.selectedpubs %}
+					{% assign pub = site.publications | where_exp:"item", "item.path contains selpub" | first %}
+					<li>{{ pub.title }} - {{ pub.authors }}, <a href="{{ pub.link }}">{{ pub.journal }}, {{ pub.date | date: "%b %Y" }}</a></li>
+					{% endfor %}
 				</ul>
 
 
