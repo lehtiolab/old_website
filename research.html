@@ -6,21 +6,21 @@ layout: default
 
 				<div class="tile is-ancestor">
 				<!-- here go the tiles -->
-					{% assign project = site.research | where 'title', 'Bioinformatics'|first %}
+					{% assign project = site.research | where: 'title', 'Bioinformatics'|first %}
 					<div class="tile is-4 is-parent">
 						<article class="tile notification is-child container">
 							{% include research.html %}
 						</article>
 					</div>
 				
-					{% assign project = site.research | where 'title', 'Plasma proteomics'|first %}
+					{% assign project = site.research | where: 'title', 'Plasma proteomics'|first %}
 					<div class="tile is-4 is-parent">
 						<article class="tile notification is-info is-child container">
 							{% include research.html %}
 						</article>
 					</div>
 
-					{% assign project = site.research | where 'title', 'Lung cancer'|first %}
+					{% assign project = site.research | where: 'title', 'Lung cancer'|first %}
 					<div class="tile is-4 is-parent">
 						<article class="tile notification is-primary is-child container">
 							{% include research.html %}
@@ -30,21 +30,21 @@ layout: default
 
 				<div class="tile is-ancestor">
 
-					{% assign project = site.research | where 'title', 'Breast cancer'|first %}
+					{% assign project = site.research | where: 'title', 'Breast cancer'|first %}
 					<div class="tile is-4 is-parent">
 						<article class="tile notification is-success is-child container">
 							{% include research.html %}
 						</article>
 					</div>
 
-					{% assign project = site.research | where 'title', 'Proteomics methods' |first %}
+					{% assign project = site.research | where: 'title', 'Proteomics methods' |first %}
 					<div class="tile is-4 is-parent">
 						<article class="tile notification is-child container">
 							{% include research.html %}
 						</article>
 					</div>
 				
-					{% assign project = site.research | where 'title', 'Childhood cancer'|first %}
+					{% assign project = site.research | where: 'title', 'Childhood cancer'|first %}
 					<div class="tile is-4 is-parent">
 						<article class="tile notification is-child is-warning container">
 							{% include research.html %}
