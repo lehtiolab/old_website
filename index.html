@@ -1,20 +1,48 @@
 ---
 layout: default
+selectedpubs:
+  - 2_Zhu_2018_Nat_Commun.md
+  - 16_Panizza_2017_Sci_Rep.md
 ---
-		<div class="section">
-			<div class="container">
+<div class="section">
+	<div class="container">
 
-				<div class="columns">
-					<div class="column">
-						<img src="img/lukas_space_pg_cp.png">
-					</div>
-					<div class="column">
-						<div class="box is-size-6">
-							<h5 class="title is-5">Towards improved medicine through MS</h5> We are Lehtiö lab. We engage in developing mass spectrometry based methods to improve the depth of proteome analysis. Additionally, we apply multilayer bioinformatic analyses to examine the proteome in the context of the genome and transcriptome. Interpreting multilevel “omics” data provides an understanding of how genome aberrations impact the proteome. We apply this understanding to identify biomarkers which aid in selecting the most effective therapies for cancer patients.
-				Check out <a href="opportunities.html">positions and courses</a>, read our <a href="opportunities.html">publications</a>, have a look at our <a href="opportunities.html">services and instruments</a>, and <a href="opportunities.html">get in touch</a>!
+		<div class="columns">
+			<div class="column">
+				<img src="img/lukas_space_pg_cp.png">
+			</div>
+			<div class="column">
+				<div class="box is-size-6">
+					<h5 class="title is-5">Towards improved medicine through MS</h5> We are Lehtiö lab. We engage in developing mass spectrometry based methods to improve the depth of proteome analysis. Additionally, we apply multilayer bioinformatic analyses to examine the proteome in the context of the genome and transcriptome. Interpreting multilevel “omics” data provides an understanding of how genome aberrations impact the proteome. We apply this understanding to identify biomarkers which aid in selecting the most effective therapies for cancer patients.
+		Check out <a href="opportunities.html">positions and courses</a>, read our <a href="opportunities.html">publications</a>, have a look at our <a href="opportunities.html">services and instruments</a>, and <a href="opportunities.html">get in touch</a>!
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section">
+	<div class="container">
+		<h4 class="title is-4 has-text-centered">Selected publications</h4>
+		<div class="columns is-centered">
+			<div class="column is-two-thirds">
+				{% assign selected = site.publications | where_exp:"item", "item.path in page.selectedpubs" %}
+				{% for pub in selected %}
+				<div class="box">
+					<div class="columns">
+						<div class="column is-one-fifth">
+							<img src="{{ pub.image }}" width="90px">
+						</div>
+						<div class="column">
+							<h4 class="title is-4"><a href="{{ pub.link }}">{{ pub.title }}</a></h4>
+							<h5 class="subtitle is-5">
+								{{ pub.journal }}, {{ pub.month }}, {{ pub.year }}
+							</h5>
+							{{ pub.authors }}
 						</div>
 					</div>
 				</div>
+				{% endfor %}
 			</div>
-
 		</div>
+	</div>
+</div>
