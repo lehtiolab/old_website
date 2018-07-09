@@ -1,5 +1,5 @@
 ---
-doi: 10.3402/jev.v4.26883
+link: https://dx.doi.org/10.3402/jev.v4.26883
 journal: Journal of extracellular vesicles
 title: Serum-free culture alters the quantity and protein composition of neuroblastoma-derived extracellular vesicles.
 date: 2015-05-27

@@ -1,5 +1,5 @@
 ---
-doi: 10.1038/srep35712
+link: https://dx.doi.org/10.1038/srep35712
 journal: Scientific reports
 title: Mesenchymal state of intimal cells may explain higher propensity to ascending aortic aneurysm in bicuspid aortic valves.
 date: 2016-10-25

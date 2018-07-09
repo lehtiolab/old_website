@@ -1,5 +1,5 @@
 ---
-doi: 10.1371/journal.pone.0129008
+link: https://dx.doi.org/10.1371/journal.pone.0129008
 journal: PloS one
 title: Proteomics Analysis Reveals Distinct Corona Composition on Magnetic Nanoparticles with Different Surface Coatings: Implications for Interactions with Primary Human Macrophages.
 date: 2015-10-07

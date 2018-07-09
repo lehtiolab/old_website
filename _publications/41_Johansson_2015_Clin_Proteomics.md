@@ -1,5 +1,5 @@
 ---
-doi: 10.1186/s12014-015-9080-y
+link: https://dx.doi.org/10.1186/s12014-015-9080-y
 journal: Clinical proteomics
 title: Proteomics profiling identify CAPS as a potential predictive marker of tamoxifen resistance in estrogen receptor positive breast cancer.
 date: 2015-03-21

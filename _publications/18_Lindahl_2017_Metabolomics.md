@@ -1,5 +1,5 @@
 ---
-doi: 10.1007/s11306-017-1199-6
+link: https://dx.doi.org/10.1007/s11306-017-1199-6
 journal: Metabolomics : Official journal of the Metabolomic Society
 title: Discrimination of pancreatic cancer and pancreatitis by LC-MS metabolomics.
 date: 2017-04-01

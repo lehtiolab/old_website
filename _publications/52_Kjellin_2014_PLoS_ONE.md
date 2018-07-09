@@ -1,5 +1,5 @@
 ---
-doi: 10.1371/journal.pone.0087951
+link: https://dx.doi.org/10.1371/journal.pone.0087951
 journal: PloS one
 title: Differentially expressed proteins in malignant and benign adrenocortical tumors.
 date: 2014-02-03

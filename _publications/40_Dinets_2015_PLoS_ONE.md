@@ -1,5 +1,5 @@
 ---
-doi: 10.1371/journal.pone.0126472
+link: https://dx.doi.org/10.1371/journal.pone.0126472
 journal: PloS one
 title: Differential protein expression profiles of cyst fluid from papillary thyroid carcinoma and benign thyroid lesions.
 date: 2015-05-15
