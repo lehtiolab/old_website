@@ -10,13 +10,15 @@ layout: default
 						{% if site.positions.size > 0 %}
 							{% for opp in site.positions %}
 							<div class="box">
-							<h4 class="title is-4">{{ opp.title }}</h4>
-							<h5 class="subtitle is-5">{{ opp.field }}</h5>
-							{{ opp.content }}
+								<h4 class="title is-4">{{ opp.title }}</h4>
+								<h5 class="subtitle is-5">{{ opp.field }}</h5>
+								{{ opp.content }}
 							</div>
 							{% endfor %}
 						{% else %}
-							<h4 class="title is-4">We currently do not have open positions</h4>
+							<div class="box">
+								<h4 class="title is-4">We currently do not have open positions</h4>
+							</div>
 						{% endif %}
 				
 						<h3 class="title is-3 has-text-centered">Courses</h3>
