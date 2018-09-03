@@ -12,7 +12,7 @@ layout: default
 							<ul>
 
 							{% for pub in reversepubs %}
-							<li>{{ pub.title }} - {{ pub.authors }}, <a href="{{ pub.link }}">{{ pub.journal }}, {{ pub.date | date: "%b %Y" }}</a></li>
+							<li><strong>{{ pub.title }}</strong> {{ pub.authors }}, <a href="{{ pub.link }}">{{ pub.journal }}, {{ pub.date | date: "%b %Y" }}</a></li>
 							{% endfor %}
 							</ul>
 						</div>
