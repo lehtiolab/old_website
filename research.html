@@ -9,7 +9,7 @@ layout: default
 			{% assign project = site.research | where: 'title', 'Bioinformatics'|first %}
 			{% include researchmodal.html %}
 			<div class="tile is-4 is-parent">
-				<article class="tile notification is-child container">
+				<article class="tile notification is-warning is-child container">
 					{% include research.html %}
 				</article>
 			</div>
@@ -53,6 +53,16 @@ layout: default
 			{% include researchmodal.html %}
 			<div class="tile is-4 is-parent">
 				<article class="tile notification is-child is-warning container">
+					{% include research.html %}
+				</article>
+			</div>
+		</div>
+		<div class="tile is-ancestor">
+
+			{% assign project = site.research | where: 'title', 'Molecular tumor'|first %}
+			{% include researchmodal.html %}
+			<div class="tile is-4 is-parent">
+				<article class="tile notification is-child container">
 					{% include research.html %}
 				</article>
 			</div>
