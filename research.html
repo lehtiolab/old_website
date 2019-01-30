@@ -62,10 +62,23 @@ layout: default
 			{% assign project = site.research | where: 'title', 'Molecular tumor'|first %}
 			{% include researchmodal.html %}
 			<div class="tile is-4 is-parent">
-				<article class="tile notification is-child container">
+				<article class="tile notification is-info is-child container">
 					{% include research.html %}
 				</article>
 			</div>
+
+			<div class="tile is-4 is-parent">
+				<article class="tile notification is-child container">
+				</article>
+			</div>
+
+			{% assign project = site.research | where: 'title', 'Your project'|first %}
+			{% include researchmodal.html %}
+			<div class="tile is-4 is-parent">
+				<article class="tile notification is-child container">
+				</article>
+			</div>
+			
 		</div>
 	</div>
 </div>
