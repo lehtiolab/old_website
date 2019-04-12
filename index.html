@@ -37,19 +37,12 @@ selectedpubs:
 				{% for selpub in page.selectedpubs %}
 				{% assign pub = site.publications | where_exp:"item", "item.path contains selpub" | first %}
 				<div class="box">
-					<div class="columns">
-						<div class="column is-one-fifth">
-							<img src="{{ pub.image }}" width="90px">
-						</div>
-						<div class="column">
-							<h4 class="title is-4"><a href="{{ pub.link }}">{{ pub.title }}</a></h4>
-							<h5 class="subtitle is-5">
-								{{ pub.journal }}, {{ pub.date | date: "%b %Y" }}
-							</h5>
-							{{ pub.authors }}
-						</div>
+					<h4 class="title is-4"><a href="{{ pub.link }}">{{ pub.title }}</a></h4>
+					<h5 class="subtitle is-5">
+						{{ pub.journal }}, {{ pub.date | date: "%b %Y" }}
+					</h5>
+					{{ pub.authors }}
 					{{ pub.content }}
-					</div>
 				</div>
 				{% endfor %}
 			</div>
