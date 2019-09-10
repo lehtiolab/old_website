@@ -5,4 +5,4 @@ name: Nate Vacanti
 image: img/nate_small.jpg
 title: Postdoc
 ---
-Now assistant professor at <a href="https://www.human.cornell.edu/people/nv83">Cornell University</a>
+Became an assistant professor at <a href="https://www.human.cornell.edu/people/nv83">Cornell University</a>

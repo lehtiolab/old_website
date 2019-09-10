@@ -5,4 +5,4 @@ name: Yafeng Zhu
 image: false
 title: Postdoc
 ---
-Now a bioinformatics scientist at <a href="https://www.bgi.com/">BGI-Shenzhen</a>
+Moved to <a href="https://www.bgi.com/">BGI-Shenzhen</a> as a bioinformatics scientist

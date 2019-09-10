@@ -5,4 +5,4 @@ name: Elena Panizza
 image: false
 title: Ph.D student
 ---
-Now a postdoc at <a href="https://cornell.edu">Cornell</a>
+Moved to do a postdoc at <a href="https://cornell.edu">Cornell</a>
