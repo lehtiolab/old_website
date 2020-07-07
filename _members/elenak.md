@@ -1,5 +1,5 @@
 ---
-alumn: false
+alumn: true
 date: 2018-01-01
 name: Elena Kunold
 image: img/ElenaK.jpg
