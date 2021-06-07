@@ -1,7 +1,7 @@
 ---
 alumn: false
 date: 2018-01-01
-name: Taner Arslan
+name: Eduardo Araujo
 image: img/Eduardo.jpg
 title: Research Engineer
 ---
