@@ -3,6 +3,6 @@ alumn: false
 date: 2018-01-01
 name: Fabio Socciarelli
 image: img/fabioz.jpg
-title: Ph.D student
+title: Ph.D. student
 ---
 
